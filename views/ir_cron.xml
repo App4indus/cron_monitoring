@@ -17,11 +17,8 @@
                             <field name="a4i_sensor_endpoint" attrs="{'required':[('a4i_sensor_active', '=', True)]}"/>
                         </group>
                     </page>
-
-
                 </xpath>
             </field>
         </record>
-
     </data>
 </openerp>

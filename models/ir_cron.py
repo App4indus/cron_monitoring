@@ -84,4 +84,3 @@ class a4i_monitoring_cron(models.Model):
             self.push_uptime_kuma()
                 
         return res
-    

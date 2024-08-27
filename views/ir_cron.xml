@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+        <!-- FORM VIEW ir cron -->
+		<record id='view_formir_cron_a4i' model='ir.ui.view'>
+            <field name="name">view_formir_cron_a4i</field>
+            <field name="model">ir.cron</field>
+            <field name="inherit_id" ref= "base.ir_cron_view"/>
+			<field name="priority" eval="1001"/>  
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='group_technical']/.." position="after">
+                    <page string="Monitoring" name="monitoring">
+                        <group name="push_sensor" string="Push sensor">
+                            <field name="a4i_sensor_active"/>
+                            <field name="a4i_sensor_endpoint" attrs="{'required':[('a4i_sensor_active', '=', True)]}"/>
+                        </group>
+                    </page>
+
+
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

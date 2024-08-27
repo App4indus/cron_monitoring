@@ -58,7 +58,6 @@ class a4i_monitoring_cron(models.Model):
     def _callback(self, model_name, method_name, args, job_id):
         """
         Override the callback method to update the sensor state
-        return: boolean
         """
         res = False
         try:
@@ -76,11 +75,10 @@ class a4i_monitoring_cron(models.Model):
     def run_manually(self):
         """
         Override the run_manually method to update the sensor state
-        return: boolean
         """
         res, history = super(a4i_monitoring_cron, self).run_manually()
 
         if res is None and self.a4i_sensor_active:
             self.push_uptime_kuma()
                 
-        return res
+        return res, history

@@ -51,9 +51,9 @@ Consultez la notice d'utilisation qui contient toute la documentation nécessair
 
 ## Screens 
 
-![Config cron](img/config-cron.png)
+![Config cron](docs/img/config-cron.png)
 
-![Uptime Kuma](img/uptime-kuma.png)
+![Uptime Kuma](docs/img/uptime-kuma.png)
 
 
 ## Contribution

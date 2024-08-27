@@ -51,7 +51,10 @@ Consultez la notice d'utilisation qui contient toute la documentation nécessair
 
 ## Screens 
 
-![Config](https://app4indus.com/wp-content/uploads/2024/01/form-view-vehicle.png)
+![Config cron](img/config-cron.png)
+
+![Uptime Kuma](img/uptime-kuma.png)
+
 
 ## Contribution
 
